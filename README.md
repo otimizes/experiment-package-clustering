@@ -129,4 +129,4 @@ cliff.delta(mm_cros, mm_sem)
 
 [Click here if you want to download all PLA alternatives](https://raw.githubusercontent.com/otimizes/experiment-package-clustering/master/AGM-Qualitative-Experiment/pla-alternatives.zip)
 
-OBS: If you want to see the personal informations about DMs, create a pull request with your e-mail and we will be in touch. Best Regards.
+> If you want to see the personal informations about DMs, create a pull request with your e-mail and we will be in touch. Best Regards.
