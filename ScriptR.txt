@@ -1,0 +1,79 @@
+﻿
+
+Script no R
+
+//Não precisa normalizar pois está em escala de 1-5
+dados <- c(3,4,2,3,4,3,4,5,5,4,4,3,4,4,4,4,3,4)
+dm1 <- c(3,4,2,3)
+dm2 <- c(4,3,4,4)
+dm3 <- c(5,5,4,4)
+dm4 <- c(3,4,4,4,4,3,4)
+
+//Desvio Padrão
+sd(dados)
+sd(dm1)
+sd(dm2)
+sd(dm3)
+sd(dm4)
+
+//Variância
+sd(dados)
+var(dm1)
+var(dm2)
+var(dm4)
+var(dm4)
+
+//Média
+mean(dados)
+mean(dm1)
+mean(dm2)
+mean(dm3)
+mean(dm4)
+
+//Mediana
+median(dados)
+median(dm1)
+median(dm2)
+median(dm3)
+median(dm4)
+
+
+//Usa o shapiro-wilk para verificar se os dados estão em formato normal ou não
+
+shapiro.test(dados)
+
+// Distribuição não normal usa Mann-Whitney
+wilcox.test(mm_cros,mm_sem) 
+  
+data:  mm_cros and mm_sem
+W = 102, p-value = 0.02229
+alternative hypothesis: true location shift is not equal to 0
+
+
+Caso p-value for menor que 0.05, Rejeita-se a hipótse nula
+Se for maior, aceita, ou seja, não há diferença estatística.
+
+
+
+Para criar Boxplot:
+
+boxplot(lista_1, lista_2, names=c("nome_lista_1","nome_lista_2"), xlab="nome do eixo x")
+
+
+boxplot(mm_cros, mm_sem, names=c("crossover","sem crossover"), xlab="mm")
+
+
+
+
+
+
+Tamenho efeito
+
+utiliza o pacote EffSize
+
+https://cran.r-project.org/web/packages/effsize/effsize.pdf
+
+
+
+cliff.delta(mm_cros, mm_sem)
+
